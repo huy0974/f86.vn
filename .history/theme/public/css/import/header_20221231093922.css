@@ -1,0 +1,83 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    background-color: var(--bg-green);
+    border-bottom: 1.2rem solid var(--bg-white);
+}
+
+.header-top .container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+ul.benefit li.benefit-item {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: red;
+    font-family: 'UTM Avo';
+    font-weight: 600;
+    color: var(--bg-white);
+    padding: 1.7rem 2rem;
+}
+
+ul.benefit li.benefit-item:last-child {
+    padding-right: 0;
+}
+
+ul.benefit li.benefit-item::before {
+    display: inline-block;
+    content: '\f058';
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    color: #F99D1C;
+    padding-inline: 1rem;
+}
+
+/* ul.benefit li.benefit-item i {
+    display: inline-block;
+    padding-inline: 1rem;
+    color: #F99D1C;
+} */
+
+/* END HEADER TOP  */
+.header-bottom {
+    background-color: var(--bg-orange);
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+}
+
+.header-bottom .container {
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    justify-content: right;
+}
+
+.header-bottom a.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-bottom a.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-bottom .content {
+    font-size: 2.5rem;
+    font-family: 'UTM AvoBold';
+    color: var(--bg-green);
+    text-shadow: 1px 1px var(--bg-white);
+    /* flex-basis: 50%; */
+    width: fit-content;
+}

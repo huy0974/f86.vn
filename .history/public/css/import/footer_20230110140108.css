@@ -1,0 +1,137 @@
+a.social-icon {
+    display: block;
+    position: fixed;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+a.social-icon-mess {
+    bottom: 7.5rem;
+}
+
+a.social-icon-zalo {
+    bottom: 1.5rem;
+}
+
+a.social-icon img {
+    width: 5rem;
+    height: auto;
+}
+
+/* END SOCIAL-ICON  */
+.btn-scrolltop {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.btn-scrolltop img {
+    width: 6rem;
+    height: auto;
+}
+
+/* END BTN-SCROLLTOP  */
+#footer #footer-top {
+    background-color: var(--bg-green);
+    padding-block: 1.5rem;
+}
+
+#footer #footer-top .footer-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer #footer-top .footer-top-content span.footer-thank {
+    font-size: 2rem;
+    color: var(--bg-white);
+    font-family: 'UTM AvoBold';
+    text-transform: uppercase;
+    margin-left: -1.5rem;
+}
+
+#footer #footer-top .footer-top-content a.hotline {
+    color: var(--bg-white);
+    border: 0.2rem solid var(--bg-white);
+    background-color: var(--bg-orange);
+    margin-right: -1.5rem;
+}
+
+/* END FOOTER-TOP  */
+#footer #footer-bottom .footer-logo a.logo img {
+    display: block;
+    max-width: 18rem;
+    height: auto;
+}
+
+#footer #footer-bottom {
+    padding-block: 4rem;
+}
+
+#footer #footer-bottom a.logo {
+    display: block;
+    width: 80%;
+}
+
+#footer #footer-bottom a.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-info-contact {
+    font-size: 1.6rem;
+    color: var(--bg-gray);
+}
+
+.footer-info-contact .wp-info-contact {
+    width: fit-content;
+}
+
+.footer-info-contact p {
+    padding-block: 1rem;
+    border-bottom: 0.2rem solid var(--bg-green);
+}
+
+ul.list-info-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-info-contact li a {
+    color: var(--bg-gray);
+}
+
+ul.list-info-contact li:hover a {
+    color: var(--bg-orange);
+}
+
+ul.list-info-contact i {
+    display: inline-block;
+    width: 3rem;
+    height: auto;
+    color: var(--bg-green);
+}
+
+#footer-bottom .row {
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    #footer #footer-top .footer-top-content {
+        justify-content: center;
+    }
+
+    .footer-info-contact {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #footer #footer-top .footer-top-content span.footer-thank {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,132 @@
+:root {
+    --bg-page: #F8F8F8;
+    --bg-green: #008541;
+    --bg-white: #FFFFFF;
+    --bg-orange: #F99D1C;
+    --bg-gray: #666666;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "UTM Avo";
+}
+
+body {
+    background-color: var(--bg-page);
+}
+
+.head-box {
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--bg-green);
+}
+
+p.title {
+    font-size: 1.8rem;
+    font-family: 'UTM AvoBold';
+    color: var(--bg-green);
+    text-transform: uppercase;
+    margin-block: 1.5rem;
+}
+
+.box {
+    background-color: var(--bg-white);
+    padding: 2rem 3rem;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+a.hotline {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: 'UTM HelvetIns';
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    border-radius: 100rem;
+    overflow: hidden;
+}
+
+a.hotline span.icon-phone i {
+    font-size: 3rem;
+    color: var(--bg-green);
+    padding-inline: 0.5rem;
+}
+
+.animation-phone {
+    animation-name: trin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes trin {
+
+    from {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    20%,
+    32%,
+    44%,
+    56%,
+    68% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    23%,
+    35%,
+    47%,
+    59%,
+    71% {
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    26%,
+    38%,
+    50%,
+    62%,
+    74% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    29%,
+    41%,
+    53%,
+    65%,
+    77% {
+        transform: rotate3d(0, 0, 1, -15deg);
+    }
+
+    80% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+}
+
+span.star {
+    color: #FF0000;
+    font-size: 2.3rem;
+}
+
+p.note {
+    font-size: 1.4rem;
+    color: var(--bg-gray);
+    font-family: "UTM AvoItalic";
+}
+
+span.input-group-text {
+    font-size: 1.6rem;
+    background-color: var(--bg-green);
+    color: var(--bg-white);
+}

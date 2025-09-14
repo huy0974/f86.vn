@@ -1,0 +1,62 @@
+.home-form-wrapper .container {
+    padding-block: 4rem;
+}
+
+.home-form-wrapper .form-subscribe-wrap {
+    padding-bottom: 6rem;
+    border-bottom: 0.2rem solid var(--bg-green);
+}
+
+.home-form-wrapper .form-subscribe-wrap .form-intro h2 {
+    color: var(--bg-green);
+    font-size: 18px;
+    font-family: "UTM AvoBold";
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+}
+
+.home-form-wrapper .form-subscribe-wrap .form-intro .item-option {
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    font-family: "UTM AvoBold";
+    padding-block: 1.5rem;
+    font-weight: bold;
+}
+
+.home-form-wrapper .form-subscribe-wrap .form-intro .item-option span.icon {
+    width: 24px;
+    height: 24px;
+    color: var(--bg-green);
+    padding-right: 1rem;
+}
+
+.home-form-wrapper .form-subscribe-wrap .form-intro .item-option span.icon i {
+    font-weight: bold;
+}
+
+.home-form-wrapper .form-subscribe-wrap .form-intro .wrapper-button {
+    margin-top: 5rem;
+}
+
+.home-form-wrapper .form-subscribe-wrap .form-intro .wrapper-button button {
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    background-color: var(--bg-green);
+    color: var(--bg-white);
+    border-radius: 6px;
+    font-size: 1.6rem;
+}
+
+.home-form-wrapper .form-subscribe-wrap .wrapper-img-option img {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+}
+
+/* END HOME-FORM-WRAPPER  */
+.wp-title h2.title-should-choose {
+    font-size: 3rem;
+    font-family: "UTM Avo";
+}

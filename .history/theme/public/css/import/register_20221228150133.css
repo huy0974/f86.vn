@@ -1,0 +1,9 @@
+#advantages {
+    margin-block: 7rem;
+    background-color: var(--bg-white);
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 3rem;
+    /* z-index: 1; */
+}
+
+#advantages

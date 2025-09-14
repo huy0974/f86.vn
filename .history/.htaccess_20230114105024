@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^trangchu.html$ index.php?mod=home&controller=index&action=index

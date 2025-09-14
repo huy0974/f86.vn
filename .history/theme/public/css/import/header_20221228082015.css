@@ -1,0 +1,14 @@
+ul.benefit li.benefit-item {
+    display: inline-block;
+    font-size: 2rem;
+    color: red;
+    font-family: 'ATM AvoBold';
+    font-weight: 900;
+}
+
+ul.benefit li.benefit-item::before {
+    position: relative;
+    content: '\f00c';
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+}

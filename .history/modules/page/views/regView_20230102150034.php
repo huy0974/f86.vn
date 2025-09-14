@@ -1,0 +1,402 @@
+<?php
+get_header();
+?>
+<div id="wp-header">
+    <div id="header">
+        <div class="header-top">
+            <div class="container">
+                <ul class="benefit">
+                    <li class="benefit-item">Lãi suất hấp dẫn</li>
+                    <li class="benefit-item">Thủ tục đơn giản </li>
+                    <li class="benefit-item">Giải ngân dễ dàng</li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container d-flex align-items-center justify-content-between">
+                <!-- <div class="row"> -->
+                <div class="col-md-2">
+                    <div class="logo">
+                        <a href="" class="logo">
+                            <img src="./public/images/LOGO.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="w-content"><span class="content text-uppercase">Hỗ trợ khách vay hộ khẩu hà
+                            nội</span></p>
+                </div>
+                <div class="col-md-4 text-right pr-md-0">
+                    <a href="tel:0868300516" class="hotline hotline-header text-decoration-none">
+                        <span class="icon-phone"><i class="fa-solid fa-phone-volume animation-phone"></i></span>
+                        <span>086.830.0516</span>
+                    </a>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END HEADER  -->
+<style>
+    #banner img,
+    #banner-mobile img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+<div id="wp-content">
+    <section class="home-banner d-none d-md-block">
+        <div id="banner" class="banner carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#banner" class="active" data-slide-to="0"></li>
+                <li data-target="#banner" data-slide-to="1"></li>
+                <li data-target="#banner" data-slide-to="2"></li>
+                <li data-target="#banner" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/20220511164418256-1920 x 470.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/20221012100205330-f88 vay tiền destop.png" alt="">
+                    </a>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/20221118174037871-destop wc vay tiền tại f88.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/slider_4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <a href="#banner" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#banner" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <section class="home-banner-mobile d-block d-md-none">
+        <div id="banner-mobile" class="banner-mobile carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#banner-mobile" class="active" data-slide-to="0"></li>
+                <li data-target="#banner-mobile" data-slide-to="1"></li>
+                <li data-target="#banner-mobile" data-slide-to="2"></li>
+                <li data-target="#banner-mobile" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/20221118173653929-wc mobile f88 cho vay tiền_mobile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/vayf88online_mobile.png" alt="">
+                    </a>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/vaybangoto_mobile.jpg" alt="">
+                    </a>
+                </div>
+                <div class="carousel-item" data-interval="2500">
+                    <a href="">
+                        <img class="desktop" src="./public/images/cantiengoilien_mobile.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <a href="#banner-mobile" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#banner-mobile" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <!-- END HOME-BANNER  -->
+    <div id="wp-info-reg">
+        <div class="container">
+            <div class="text-center">
+                <h1>Thông tin đăng ký vay tiền</h1>
+            </div>
+            <div id="wp-form-reg" class="box">
+                <div class="form-reg-title">
+                    <p>Nhập thông tin đăng ký vay</p>
+                    <p class="condition-reg">Chỉ cần Căn cước công dân hoặc Sổ hộ khẩu, duyệt vay nhanh chóng
+                        trong <span>15 phút</span></p>
+                </div>
+                <div class="form-reg-content">
+                    <form id="form" action="" method="post">
+                        <div class="row">
+                            <div id="info-customer" class="col-md-6">
+                                <p class="title text-center">Thông tin cá nhân</p>
+                                <div class="form-group">
+                                    <label for="fullname">Họ tên <span class="star">*</span></label>
+                                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Nhập họ tên" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="number_phone">Số điện thoại<span class="star">*</span></label>
+                                    <input type="tel" class="form-control" name="number_phone" id="number_phone" placeholder="Nhập số điện thoại" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="address">Địa chỉ đang ở? <span class="star">*</span></label>
+                                    <input type="text" class="form-control" name="address" id="address" placeholder="Nhập địa chỉ bạn đang ở?" />
+                                </div>
+                                <label for="">Địa chỉ bạn đang ở có trùng hộ khẩu không?</label>
+                                <div class="form-group d-flex align-items-center">
+                                    <input type="radio" name="gender" id="yes" value="yes">
+                                    <label for="yes" class="ml-2 mr-5 font-weight-normal">Có</label>
+                                    <input type="radio" name="gender" id="no" value="no">
+                                    <label for="no" class="ml-2 mr-5 font-weight-normal">Không</label>
+                                </div>
+                                <div class="form-group proof_documents">
+                                    <input type="text" class="form-control" name="proof_documents" id="
+                                            proof_documents" placeholder="Giấy tờ chứng minh nhà của bạn (VD: Sổ đỏ, sổ hồng,...)" />
+                                </div>
+                            </div>
+                            <div id="exhibit" class="col-md-6">
+                                <p class="title text-center">Giấy tờ để lại</p>
+                                <div class="form-group m-0">
+                                    <label for="">Bạn muốn vay bằng <span class="star">*</span></label>
+                                </div>
+                                <div id="exhibit-reg">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="CCCD Chip" id="cccd" />
+                                                <label for="cccd" class="form-check-label">CCCD
+                                                    Chip (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="Sổ hộ khẩu" id="shk" />
+                                                <label for="shk" class="form-check-label">Sổ hộ khẩu
+                                                    (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="Giấy khai sinh con" id="gks_con" />
+                                                <label for="gks_con" class="form-check-label">Giấy khai sinh con
+                                                    (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="Blx Máy" id="blx_moto" />
+                                                <label for="blx_moto" class="form-check-label">Blx máy
+                                                    (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="Blx Ô tô" id="blx_car" />
+                                                <label for="blx_car" class="form-check-label">Blx ô tô
+                                                    (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="Đăng ký xe máy" id="reg_moto" />
+                                                <label for="reg_moto" class="form-check-label">Đăng ký xe máy
+                                                    (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group form-check d-flex align-items-center">
+                                                <input type="checkbox" class="form-check-input" name="exhibit[]" value="Đăng ký xe ô tô" id="reg_car" />
+                                                <label for="reg_car" class="form-check-label">Đăng ký xe ô tô
+                                                    (gốc)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="exhibit[]" placeholder="Nhập giấy tờ khác bạn có thể để lại" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p class="note"><span class="star">*</span>Thông tin bắt buộc</p>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <div class="wp-btn-reg">
+                                    <button type="submit" name="btn_reg" class="btn_reg btn">ĐĂNG KÝ <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END WP-info-REG  -->
+    <div id="wp-note">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="note">Thời hạn khoản vay tối thiểu 50 ngày</p>
+                    <p class="note">Lãi suất vay ưu đãi</p>
+                    <p class="note">Nhận tiền sau 15 phút đăng ký</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NOTE  -->
+    <div class="container">
+        <div id="advantages" class="container box">
+            <div class="head-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title">Ưu điểm khi vay tại 23k</p>
+                    </div>
+                </div>
+            </div>
+            <div class="list-advantage">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-12">
+                        <p class="advantage">Lãi suất hấp dẫn</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <p class="advantage">15 phút có tiền</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <p class="advantage">Gói vay không giới hạn</p>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <p class="advantage">Bảo mật thông tin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END ADVANTAGES  -->
+    <div class="container">
+        <div id="should-choose" class="container box">
+            <div class="head-box">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title">Bạn nên chọn 23k</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-reason">
+                <div class="row text-center">
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <li class="reason-item">
+                            <a href="#fullname"><img src="./public/images/thu_tuc.png" alt=""></a>
+                            <p>Thủ tục đơn giản chỉ cần CCCD & sổ hộ khẩu Hà Nội</p>
+                        </li>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <li class="reason-item">
+                            <a href="#wp-info-reg"><img src="./public/images/tham_dinh.png" alt=""></a>
+                            <p>
+                                Thẩm định nhanh chóng linh hoạt
+                            </p>
+                        </li>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <li class="reason-item">
+                            <a href="#form"><img src="./public/images//lai_suat.png" alt=""></a>
+                            <p>Lãi suất ưu đãi nhất Hà Nội</p>
+                        </li>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <li class="reason-item">
+                            <a href="#form"><img src="./public/images/tu_van.png" alt=""></a>
+                            <p>Đăng ký tư vấn online dễ dàng</p>
+                        </li>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <li class="reason-item">
+                            <a href="#form"><img src="./public/images/bao_mat.png" alt=""></a>
+                            <p>Bảo mật thông tin khách hàng</p>
+                        </li>
+                    </div>
+                    <div class="col-6 col-md-4 col-xl-2">
+                        <li class="reason-item">
+                            <a href="#fullname"><img src="./public/images/thu_tuc.png" alt=""></a>
+                            <p>Thủ tục đơn giản chỉ cần CCCD & sổ hộ khẩu Hà Nội</p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- END SHOULD-CHOOSE  -->
+<!-- END WP-CONTENT  -->
+<div id="footer">
+    <a href="" class="social-icon social-icon-mess" target="_blank">
+        <img src="./public/images/mess.png" alt="">
+    </a>
+    <a href="https://zalo.me/0777170720" class="social-icon social-icon-zalo" target="_blank">
+        <img src="./public/images/zalo.png" alt="">
+    </a>
+    <div class="btn-scrolltop">
+        <img src="./public/images/scrollTop.png" alt="">
+    </div>
+    <div id="footer-top">
+        <div class="container">
+            <!-- <div class="row"> -->
+            <div class="footer-top-content col-12">
+                <span class="footer-thank">Trân trọng cảm ơn quý khách !</span>
+                <a href="tel:0868300516" class="hotline hotline-footer text-decoration-none">
+                    <span class="icon-phone"><i class="fa-solid fa-phone-volume animation-phone"></i></span>
+                    <span>086.830.0516</span>
+                </a>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- END FOOTER-TOP  -->
+    <div id="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="footer-logo col-md-2 col-3">
+                    <a href="" class="logo">
+                        <img src="./public/images/footer_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="footer-info-contact col-md-6 col-9">
+                    <div class="wp-info-contact">
+                        <p>Thông tin liên hệ</p>
+                        <ul class="list-info-contact">
+                            <li class="info-contact-item"><a href="https://www.google.com/maps/dir/20.978057,105.7938072/252+%C4%90.+L%E1%BA%A1c+Long+Qu%C3%A2n,+B%C6%B0%E1%BB%9Fi,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0159513,105.7645154,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3135ab1efbd06c9f:0xa36b187ef26a48f!2m2!1d105.808991!2d21.054461?hl=vi-VN" target="_blank"><i class="fa-solid fa-location-dot"></i>252
+                                    Đ.
+                                    Lạc Long
+                                    Quân, Bưởi, Cầu Giấy, Hà Nội, Việt Nam</a></li>
+                            <li class="info-contact-item"><a href="tel:0777170720"><i class="fa-solid fa-phone"></i>HOTLINE:
+                                    0777.170.720</a></li>
+                            <li class="info-contact-item"><a href=""><i class="fa-brands fa-square-facebook"></i>www.facebook.com/groups/taichinh23k</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-fanpage col-lg-4 col-12">
+                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100089082490261" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/profile.php?id=100089082490261" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100089082490261">Hà Nội Credit -
+                                Tài Chính 23K</a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER-BOTTOM  -->
+</div>
+<!-- END FOOTER  -->
+<?php
+get_footer();
+?>

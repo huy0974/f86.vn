@@ -1,0 +1,5 @@
+#footer #footer-top {
+    display: flex;
+    background-color: var(--bg-green);
+    justify-content: space-around;
+}

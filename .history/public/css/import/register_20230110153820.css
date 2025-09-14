@@ -1,0 +1,231 @@
+#wp-info-reg .container h1 {
+    font-size: 3rem;
+    font-family: "UTM AvoBold";
+    padding-block: 5rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-title {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--bg-green);
+}
+
+#wp-info-reg #wp-form-reg .form-reg-title p:first-child {
+    font-size: 1.6rem;
+    font-family: "UTM Avo";
+    text-transform: uppercase;
+    color: #333333;
+    margin-block: 1rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-title p.condition-reg {
+    font-size: 1.8rem;
+    font-family: "UTM AvoBold";
+    margin-block: 1rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-title p.condition-reg span {
+    color: var(--bg-green);
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content {
+    margin-top: 2.5rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content .form-group {
+    position: relative;
+    margin-block: 1rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content label {
+    font-size: 1.6rem;
+    font-family: "UTM AvoBold";
+    margin-block: 0.5rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content label.font-weight-normal {
+    font-family: "UTM Avo";
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content input {
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    height: 4rem;
+    padding-inline: 1.5rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content input#number_loan {
+    border-radius: 0;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content .form-group span.error {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    margin-top: 10px;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    text-align: start;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content .form-group span#error_proof_document,
+#wp-info-reg #wp-form-reg .form-reg-content .form-group span#error_exhibit {
+    bottom: -40%;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content #exhibit-reg .row {
+    align-items: center;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content #exhibit-reg label {
+    font-family: "UTM Avo";
+    padding-block: 0.8rem;
+    margin-block: 0;
+    margin-left: 0.5rem;
+}
+
+#wp-info-reg #wp-form-reg .form-reg-content #exhibit-reg input:checked+label {
+    color: var(--bg-green);
+}
+
+.wp-btn-reg {
+    margin-block: 3rem;
+}
+
+.wp-btn-reg button.btn_reg {
+    background-color: var(--bg-green);
+    font-size: 1.6rem;
+    color: var(--bg-white);
+    font-family: "UTM AvoBold";
+    border-radius: 1.3rem;
+    padding: 0.5rem 1rem;
+    width: 35%;
+}
+
+/* END WP-INFO-REG  */
+#wp-note {
+    margin-block: 3rem;
+}
+
+#wp-note p {
+    margin-block: 0.5rem;
+    color: #FF0000;
+}
+
+/* END WP-NOTE  */
+#wp-content {
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+#advantages {
+    margin-block: 7rem;
+}
+
+#advantages .list-advantage {
+    margin-inline: 2rem;
+}
+
+#advantages p.advantage {
+    font-size: 1.6rem;
+    color: #999999;
+    font-family: 'UTM AvoBold';
+    padding-block: 2rem;
+    margin-bottom: 0px;
+}
+
+#advantages p.advantage::before {
+    display: inline-block;
+    content: '\f058';
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    color: var(--bg-orange);
+    padding-inline: 1rem;
+}
+
+/* END ADVANTAGE  */
+#should-choose ul.list-reason {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 2rem;
+}
+
+
+#should-choose ul.list-reason li.reason-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+#should-choose ul.list-reason li a {
+    display: block;
+    width: 100%;
+    height: 8rem;
+}
+
+#should-choose ul.list-reason li a img {
+    display: inline-block;
+    width: 8rem;
+    height: auto;
+    transition: all 0.25s ease-in;
+}
+
+#should-choose ul.list-reason li.reason-item p {
+    font-size: 1.6rem;
+    font-family: "UTM Avo";
+    color: #808080;
+    transition: all 0.25s ease-in;
+}
+
+#should-choose ul.list-reason li.reason-item:hover img {
+    opacity: 0.75;
+}
+
+#should-choose ul.list-reason li.reason-item:hover p {
+    color: var(--bg-orange);
+}
+
+/* END SHOULD-CHOOSE  */
+.img-assistant {
+    position: absolute;
+    right: 3.28vw;
+    bottom: 0;
+}
+
+.img-assistant img {
+    width: 13.15vw;
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    #wp-info-reg .container h1 {
+        color: var(--bg-green);
+    }
+
+    #wp-info-reg #wp-form-reg .form-reg-title p.condition-reg {
+        font-size: 1.4rem;
+    }
+
+    #advantages .list-advantage {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wp-btn-reg button.btn_reg {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #wp-info-reg .container h1 {
+        font-size: 2.6rem;
+    }
+}

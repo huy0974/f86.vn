@@ -1,0 +1,23 @@
+@media (max-width: 1199px) {}
+
+@media (max-width: 767px) {}
+
+@media screen and (max-width: 575px) {
+    .head-box {
+        padding: 0;
+    }
+
+    p.title {
+        margin-block: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .box {
+        padding: 2rem;
+    }
+
+    #should-choose ul.list-reason li.reason-item p {
+        font-size: 1.3rem;
+    }
+}

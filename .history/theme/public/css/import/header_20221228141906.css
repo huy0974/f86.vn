@@ -1,0 +1,60 @@
+#wrapper #header {
+    position: relative;
+}
+
+.header-top {
+    background-color: var(--bg-green);
+    margin-bottom: 1.5rem;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.benefit li.benefit-item {
+    display: inline-block;
+    font-size: 2.2rem;
+    color: red;
+    font-family: 'ATM Avo';
+    font-weight: 600;
+    color: var(--bg-white);
+    padding: 2.6rem 2rem;
+}
+
+ul.benefit li.benefit-item:last-child {
+    padding-right: 0;
+}
+
+/* ul.benefit li.benefit-item::before {
+    position: relative;
+    display: inline-block;
+    content: '\f058';
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+} */
+ul.benefit li.benefit-item i {
+    display: inline-block;
+    padding-inline: 1rem;
+    color: #F99D1C;
+}
+
+/* END HEADER TOP  */
+.header-bottom {
+    height: 12.5rem;
+    background-color: var(--bg-orange);
+}
+
+.header-bottom .content {
+    font-size: 3rem;
+    font-family: 'UTM AvoBold';
+    color: var(--bg-green);
+    text-shadow: 1px 1px var(--bg-white);
+}
+
+#header a.logo img {
+    /* position: absolute; */
+    width: 175px;
+    height: auto;
+    /* left: 0; */
+}

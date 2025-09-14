@@ -1,0 +1,11 @@
+.home-wrapper .home-form-wrapper .form-subscribe-wrap .form-intro h2 {
+    color: var(--bg-green);
+    font-size: 18px;
+    font-family: "UTM AvoBold";
+}
+
+.home-wrapper .home-form-wrapper .form-subscribe-wrap .wrapper-img-option img {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+}

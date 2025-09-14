@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Leelawadee UI Bold';
+    src: url('../../font/leelawdb.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../../font/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'UTM Avo';
+    src: url('../../font/UTM Avo.ttf');
+}
+
+@font-face {
+    font-family: 'UTM AvoBold_Italic';
+    src: url('../../font/UTM\ AvoBold_Italic.ttf');
+}
+
+@font-face {
+    font-family: 'UTM AvoBold';
+    src: url('../../font/UTM\ AvoBold.ttf');
+}
+
+@font-face {
+    font-family: 'UTM AvoItalic';
+    src: url('../../font/UTM\ AvoItalic.ttf');
+}
+
+@font-face {
+    font-family: 'UTM HelvetIns';
+    src: url('../../font/UTM\ HelvetIns.ttf');
+}

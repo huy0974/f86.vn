@@ -1,0 +1,8 @@
+:root {
+    --bg-page: #F8F8F8;
+    --bg-green: #008541;
+}
+
+body {
+    background-color: var(--bg-green);
+}

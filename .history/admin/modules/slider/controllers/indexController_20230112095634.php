@@ -1,0 +1,95 @@
+<?php
+function construct()
+{
+}
+function indexAction()
+{
+}
+function add_sliderAction()
+{
+    load('lib', 'upload');
+    global $error_desktop, $success_desktop;
+    if (isset($_POST['add_slider_desktop'])) {
+        #Xử lý upload đúng file ảnh
+        // show_array($_FILES);
+        $error_desktop = array();
+        $success_desktop = array();
+        $type_allow = array('png', 'jpg', 'gif', 'jpeg');
+        $type = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+        if (!in_array(strtolower($type), $type_allow)) {
+            $error_desktop['type'] = "Chỉ được upload file có định dạng png, jpg, gif, jpeg";
+        } else {
+            $file_size = $_FILES['file']['size'];
+            if ($file_size < 21000000) {
+                $file_dir = "../public/uploads/slider_desktop/";
+                $file_name =  pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
+                $upload_file = $file_dir . $file_name . '.' . $type;
+                if (!file_exists($upload_file)) {
+                    if (move_uploaded_file($_FILES['file']['tmp_name'], $upload_file)) {
+                        $success_desktop['upload'] = "Upload file thành công";
+                    }
+                }
+            } else {
+                $error_desktop['size'] = "File phải có kích thước nhỏ hơn 20MB";
+            }
+        }
+        if (empty($error_desktop)) {
+            if (file_exists($upload_file)) {
+                $upload_file = $file_dir . $file_name . ' - Copy' . '.' . $type;
+            }
+            $i = 2;
+            while (file_exists($upload_file)) {
+                $upload_file = $file_dir . $file_name . ' - Copy(' . $i . ')' . '.' . $type;
+                $i++;
+            }
+            if (move_uploaded_file($_FILES['file']['tmp_name'], $upload_file)) {
+                $success_desktop['upload'] = "Upload file thành công";
+            }
+        }
+    }
+    // END ADD SLIDER DESKTOP 
+    if (isset($_POST['add_slider_mobile'])) {
+        #Xử lý upload đúng file ảnh
+        // show_array($_FILES);
+        $error = array();
+        $success = array();
+        $type_allow = array('png', 'jpg', 'gif', 'jpeg');
+        $type = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+        if (!in_array(strtolower($type), $type_allow)) {
+            $error['type'] = "Chỉ được upload file có định dạng png, jpg, gif, jpeg";
+        } else {
+            $file_size = $_FILES['file']['size'];
+            if ($file_size < 21000000) {
+                $file_dir = "../public/uploads/slider_mobile/";
+                $file_name =  pathinfo($_FILES['file']['name'], PATHINFO_FILENAME);
+                $upload_file = $file_dir . $file_name . '.' . $type;
+                if (!file_exists($upload_file)) {
+                    if (move_uploaded_file($_FILES['file']['tmp_name'], $upload_file)) {
+                        $success['upload'] = "Upload file thành công";
+                    }
+                }
+            } else {
+                $error['size'] = "File phải có kích thước nhỏ hơn 20MB";
+            }
+        }
+        if (empty($error)) {
+            if (file_exists($upload_file)) {
+                $upload_file = $file_dir . $file_name . ' - Copy' . '.' . $type;
+            }
+            $i = 2;
+            while (file_exists($upload_file)) {
+                $upload_file = $file_dir . $file_name . ' - Copy(' . $i . ')' . '.' . $type;
+                $i++;
+            }
+            if (move_uploaded_file($_FILES['file']['tmp_name'], $upload_file)) {
+                $success['upload'] = "Upload file thành công";
+            }
+        }
+    }
+    // END ADD SLIDER MOBILE
+    load_view('add_slider');
+}
+function list_sliderAction()
+{
+    load_view('list_slider');
+}

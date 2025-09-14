@@ -1,0 +1,22 @@
+#footer #footer-top {
+    background-color: var(--bg-green);
+    padding-block: 3rem;
+}
+
+#footer #footer-top .footer-top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer #footer-top .footer-top-content span.footer-thank {
+    font-size: 3.8rem;
+    color: var(--bg-white);
+    font-family: 'UTM AvoBold';
+    text-transform: uppercase;
+    margin-left: -1.5rem;
+}
+
+#footer #footer-top .footer-top-content a.hotline {
+    /* border: none; */
+    background-color: var(--bg-orange);
+}

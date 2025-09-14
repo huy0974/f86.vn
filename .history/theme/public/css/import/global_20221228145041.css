@@ -1,0 +1,20 @@
+:root {
+    --bg-page: #F8F8F8;
+    --bg-green: #008541;
+    --bg-white: #FFFFFF;
+    --bg-orange: #F99D1C;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-page);
+}
+
+p.title {
+    font-size: 2.7rem;
+    font-family: 'UTM Avo';
+    color: var(--bg-green);
+}

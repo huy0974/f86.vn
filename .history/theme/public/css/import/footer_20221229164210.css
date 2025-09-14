@@ -1,0 +1,14 @@
+#footer #footer-top {
+    background-color: var(--bg-green);
+}
+
+#footer #footer-top .footer-top-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer #footer-top .footer-top-content span.footer-thank {
+    font-size: 3.8rem;
+    color: var(--bg-white);
+    font-family: 'UTM Avo';
+}

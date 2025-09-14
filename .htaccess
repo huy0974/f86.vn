@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^trang-chu.html$ index.php?mod=home&controller=index&action=index
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=page&controller=index&action=reg

@@ -1,0 +1,12 @@
+#advantages {
+    margin-block: 7rem;
+}
+
+#advantages p.advantage {
+    font-size: 3rem;
+}
+
+#advantages p.advantage i {
+    display: inline-block;
+    padding-inline: 1rem;
+}

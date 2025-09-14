@@ -1,0 +1,8 @@
+#footer #footer-top {
+    background-color: var(--bg-green);
+}
+
+#footer #footer-top .footer-top-content {
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,8 @@
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=slider&action=add_slider 
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=slider&action=list_slider
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=home_img&action=add_img_home
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=home_img&action=index
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=video&action=add_video
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?mod=video&action=index

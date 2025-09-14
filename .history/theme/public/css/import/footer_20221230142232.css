@@ -1,0 +1,105 @@
+a.social-icon {
+    display: block;
+    position: fixed;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+a.social-icon-mess {
+    bottom: 7.5rem;
+}
+
+a.social-icon-zalo {
+    bottom: 1.5rem;
+}
+
+a.social-icon img {
+    width: 5rem;
+    height: auto;
+}
+
+/* END SOCIAL-ICON  */
+.btn-scrolltop {
+    margin: auto;
+}
+
+.btn-scrolltop img {
+    width: 6rem;
+    height: auto;
+}
+
+/* END BTN-SCROLLTOP  */
+#footer #footer-top {
+    background-color: var(--bg-green);
+    padding-block: 3rem;
+}
+
+#footer #footer-top .footer-top-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer #footer-top .footer-top-content span.footer-thank {
+    font-size: 3.8rem;
+    color: var(--bg-white);
+    font-family: 'UTM AvoBold';
+    text-transform: uppercase;
+    margin-left: -1.5rem;
+}
+
+#footer #footer-top .footer-top-content a.hotline {
+    /* border: none; */
+    background-color: var(--bg-orange);
+    margin-right: -1.5rem;
+}
+
+/* END FOOTER-TOP  */
+#footer #footer-bottom .footer-logo a.logo img {
+    display: block;
+    max-width: 18rem;
+    height: auto;
+}
+
+#footer #footer-bottom {
+    padding-block: 4rem;
+}
+
+#footer #footer-bottom a.logo {
+    display: block;
+    width: 100%;
+}
+
+#footer #footer-bottom a.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-info-contact {
+    font-size: 2.6rem;
+    color: var(--bg-gray);
+}
+
+.footer-info-contact .wp-info-contact {
+    width: fit-content;
+}
+
+.footer-info-contact p {
+    padding-block: 1rem;
+    border-bottom: 0.2rem solid var(--bg-green);
+}
+
+ul.list-info-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list-info-contact li a {
+    color: var(--bg-gray);
+}
+
+ul.list-info-contact i {
+    display: inline-block;
+    width: 3rem;
+    height: auto;
+}

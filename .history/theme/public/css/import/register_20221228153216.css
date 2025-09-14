@@ -1,0 +1,16 @@
+#advantages {
+    margin-block: 7rem;
+}
+
+#advantages p.advantage {
+    font-size: 3rem;
+    color: #999999;
+    font-family: 'UTM AvoBold';
+    padding-inline: 2rem;
+}
+
+#advantages p.advantage i {
+    display: inline-block;
+    padding-inline: 1rem;
+    color: var(--bg-orange);
+}

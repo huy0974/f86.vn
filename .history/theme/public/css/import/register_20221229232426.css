@@ -1,0 +1,70 @@
+#wp-info-reg h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+/* END WP-INFO-REG  */
+#wp-content {
+    margin-bottom: 8rem;
+}
+
+#advantages {
+    margin-block: 7rem;
+}
+
+#advantages .list-advantage {
+    margin-inline: 2rem;
+}
+
+#advantages p.advantage {
+    font-size: 3rem;
+    color: #999999;
+    font-family: 'UTM AvoBold';
+    padding-block: 2rem;
+}
+
+#advantages p.advantage::before {
+    display: inline-block;
+    content: '\f058';
+    font-family: "Font Awesome 6 Free";
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    color: var(--bg-orange);
+    padding-inline: 1rem;
+}
+
+/* END ADVANTAGE  */
+#should-choose ul.list-reason {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#should-choose ul.list-reason li.reason-item {
+    flex-basis: 20%;
+    padding: 2rem;
+}
+
+#should-choose ul.list-reason li a {
+    display: block;
+    width: 100%;
+    height: 16rem;
+}
+
+#should-choose ul.list-reason li a img {
+    display: inline-block;
+    width: 15rem;
+    height: auto;
+}
+
+#should-choose ul.list-reason li.reason-item p {
+    font-size: 2rem;
+    font-family: "UTM Avo";
+    color: #808080;
+}
